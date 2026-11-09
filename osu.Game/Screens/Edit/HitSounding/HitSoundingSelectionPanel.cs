@@ -165,7 +165,7 @@ namespace osu.Game.Screens.Edit.HitSounding
                                         },
                                         Empty(),
                                         clapToggle = new AdditionToggleButton(OsuIcon.EditorClap, @"R", HitSoundingStrings.Clap, osuColour.Pink,
-                                            new SelectionHint(HitSoundingStrings.TooltipClap, (@"R", HitSoundingStrings.HotkeyToggleClap)))
+                                            new SelectionHint(default, (@"R", HitSoundingStrings.HotkeyToggleClap)))
                                         {
                                             Action = () => model.ToggleAddition(model.SelectedNodes, HitSampleInfo.HIT_CLAP)
                                         },
@@ -640,7 +640,8 @@ namespace osu.Game.Screens.Edit.HitSounding
             private void rebuildRows()
             {
                 rows.Clear();
-                rows.Add(createTextRow(hint.Text));
+                if (!hint.Text.Equals(default))
+                    rows.Add(createTextRow(hint.Text));
 
                 if (hint.Shortcuts == null)
                     return;

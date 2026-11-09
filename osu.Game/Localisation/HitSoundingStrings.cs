@@ -125,11 +125,6 @@ namespace osu.Game.Localisation
         public static LocalisableString TooltipCycleSampleSets => new TranslatableString(getKey(@"tooltip_cycle_sample_sets"), @"Cycle sample sets on hover; no selection needed");
 
         /// <summary>
-        /// "Cycle sample banks on hover; keep the current set"
-        /// </summary>
-        public static LocalisableString TooltipCycleSampleBanks => new TranslatableString(getKey(@"tooltip_cycle_sample_banks"), @"Cycle sample banks on hover; keep the current set");
-
-        /// <summary>
         /// "Click to toggle this addition"
         /// </summary>
         public static LocalisableString TooltipToggleAddition => new TranslatableString(getKey(@"tooltip_toggle_addition"), @"Click to toggle this addition");
@@ -240,11 +235,6 @@ namespace osu.Game.Localisation
         public static LocalisableString TooltipFinish => new TranslatableString(getKey(@"tooltip_finish"), @"Click to toggle Finish");
 
         /// <summary>
-        /// "Click to toggle Clap"
-        /// </summary>
-        public static LocalisableString TooltipClap => new TranslatableString(getKey(@"tooltip_clap"), @"Click to toggle Clap");
-
-        /// <summary>
         /// "Toggle Whistle for selected points"
         /// </summary>
         public static LocalisableString HotkeyToggleWhistle => new TranslatableString(getKey(@"hotkey_toggle_whistle"), @"Toggle Whistle for selected points");
@@ -310,9 +300,9 @@ namespace osu.Game.Localisation
         public static LocalisableString SampleGallery => new TranslatableString(getKey(@"sample_gallery"), @"Sample Gallery");
 
         /// <summary>
-        /// "Click to open Sample Gallery"
+        /// "Quick edit the sampleset!"
         /// </summary>
-        public static LocalisableString TooltipSampleGallery => new TranslatableString(getKey(@"tooltip_sample_gallery"), @"Click to open Sample Gallery");
+        public static LocalisableString TooltipSampleGallery => new TranslatableString(getKey(@"tooltip_sample_gallery"), @"Quick edit the sampleset!");
 
         /// <summary>
         /// "Sample sets"
@@ -325,9 +315,9 @@ namespace osu.Game.Localisation
         public static LocalisableString AddSetButton => new TranslatableString(getKey(@"add_set_button"), @"+  Add set");
 
         /// <summary>
-        /// "Add another sample set"
+        /// "Add a sample set"
         /// </summary>
-        public static LocalisableString TooltipAddSet => new TranslatableString(getKey(@"tooltip_add_set"), @"Add another sample set");
+        public static LocalisableString TooltipAddSet => new TranslatableString(getKey(@"tooltip_add_set"), @"Add a sample set");
 
         /// <summary>
         /// "Drop a file here to replace the assigned sample"
@@ -395,9 +385,9 @@ namespace osu.Game.Localisation
         public static LocalisableString TooltipFileTileDrag => new TranslatableString(getKey(@"tooltip_file_tile_drag"), @"Drag this file onto a sample slot");
 
         /// <summary>
-        /// "Double click to edit alias without renaming the original file"
+        /// "Double Click to edit alias without renaming the original file"
         /// </summary>
-        public static LocalisableString TooltipFileTileAlias => new TranslatableString(getKey(@"tooltip_file_tile_alias"), @"Double click to edit alias without renaming the original file");
+        public static LocalisableString TooltipFileTileAlias => new TranslatableString(getKey(@"tooltip_file_tile_alias"), @"Double Click to edit alias without renaming the original file");
 
         /// <summary>
         /// "ENTER"

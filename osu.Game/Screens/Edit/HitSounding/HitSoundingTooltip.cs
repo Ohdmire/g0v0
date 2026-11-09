@@ -158,7 +158,6 @@ namespace osu.Game.Screens.Edit.HitSounding
                     rows.Add(createKeycapRow(@"CTRL+M1", HitSoundingStrings.TooltipSelectSamplePoint));
                     rows.Add(createTextRow(HitSoundingStrings.TooltipRestoreDefaults));
                     rows.Add(createKeycapRow(@"CTRL+WHEEL", HitSoundingStrings.TooltipCycleSampleSets));
-                    rows.Add(createKeycapRow(@"CTRL+SHIFT+WHEEL", HitSoundingStrings.TooltipCycleSampleBanks));
                     break;
 
                 case HitSoundingTooltipKind.Addition:

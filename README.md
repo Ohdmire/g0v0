@@ -11,6 +11,10 @@ and client features such as dedicated hitsounding tools.
 The full list of changes is maintained on the
 documentation site: [Differences from osu!(lazer)](https://docs.g0v0.top/g0v0/difference.html).
 
+The hitsounding editor's hover help follows its Figma design: only explicitly designed tooltips are
+shown, with the original English copy and corresponding Simplified and Traditional Chinese translations.
+Localisation changes are maintained together with [g0v0-resources](https://github.com/GooGuTeam/g0v0-resources).
+
 ## Download
 
 g0v0! is available for Windows (x64 / ARM64), macOS (Intel / Apple Silicon), Linux (x64 / ARM64), Android, and iOS. Grab

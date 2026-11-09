@@ -27,7 +27,7 @@ namespace osu.Game.Screens.Edit.HitSounding
     /// The right half of the sample gallery: the beatmap's sample files as large draggable tiles, filtered by alias
     /// or original filename.
     /// </summary>
-    public partial class HitSoundingSampleFileLibrary : CompositeDrawable, IHasTooltip
+    public partial class HitSoundingSampleFileLibrary : CompositeDrawable
     {
         public const float HEADER_HEIGHT = 40;
         public const float SEARCH_HEIGHT = 40;
@@ -53,8 +53,6 @@ namespace osu.Game.Screens.Edit.HitSounding
         /// The file tiles currently displayed, in display order.
         /// </summary>
         public IReadOnlyList<HitSoundingSampleFileTile> Tiles => tiles;
-
-        public LocalisableString TooltipText => HitSoundingStrings.TooltipSearchFiles;
 
         public HitSoundingSampleFileLibrary(HitSoundingSampleGallery gallery)
         {
@@ -250,9 +248,11 @@ namespace osu.Game.Screens.Edit.HitSounding
         /// <summary>
         /// The alias or filename filter field, with the number of matching files shown on the right.
         /// </summary>
-        private partial class SampleSearchBox : CompositeDrawable
+        private partial class SampleSearchBox : CompositeDrawable, IHasTooltip
         {
             public Action<string>? FilterChanged { get; set; }
+
+            public LocalisableString TooltipText => HitSoundingStrings.TooltipSearchFiles;
 
             private OsuTextBox textBox = null!;
             private OsuSpriteText count = null!;
